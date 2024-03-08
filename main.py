@@ -3,12 +3,15 @@ import psutil
 import time
 import sys
 import discord
-import dotenv
 import asyncio
 import colorama
 from colorama import Fore, init, Style
 import platform
 from serverclone import Clone
+from dotenv import load_dotenv
+
+load_dotenv()
+bot_token = os.environ['bot_token'] 
 
 mytitle = "Developed by @ureload / @0x892"
 system("title "+mytitle)
@@ -26,9 +29,9 @@ print(f"""{Fore.MAGENTA}
 {Style.RESET_ALL}
                                               {Fore.CYAN}   Owner : Unknown.{Style.RESET_ALL}
         """)
-token = input(f'1. Account Token (user token) :\n >>')
-input_guild_id = input('2. ID server copy :\n >>')
-output_guild_id = input('3. ID server paste :\n >>')
+token = input(f'process.env.BOT_TOKEN')
+input_guild_id = input('1188399194751373362')
+output_guild_id = input('1205804578826887228')
 
 print("  ")
 print("  ")
@@ -55,4 +58,4 @@ THE END!
     await client.close()
 
 
-client.run(process.env.BOT_TOKEN, bot=True)
+client.run(bot_token)
