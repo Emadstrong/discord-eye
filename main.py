@@ -29,12 +29,12 @@ print(f"""{Fore.MAGENTA}
 {Style.RESET_ALL}
                                               {Fore.CYAN}   Owner : Unknown.{Style.RESET_ALL}
         """)
-token = input(f'process.env.BOT_TOKEN')
+token = input(f'bot_token')
 input_guild_id = input('1188399194751373362')
 output_guild_id = input('1205804578826887228')
 
-print("  ")
-print("  ")
+print(" ii ")
+print("  gg")
 
 @client.event
 async def on_ready():
